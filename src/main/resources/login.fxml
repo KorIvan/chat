@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tassta.view.LoginViewImpl">
+   <children>
+      <Button onAction="#login" fx:id="loginButton" layoutX="43.0" layoutY="149.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Log in">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="190.0" layoutY="149.0" mnemonicParsing="false" onAction="#cancel" prefHeight="29.0" prefWidth="71.0" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="42.0" layoutY="79.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="usernameField" layoutX="42.0" layoutY="22.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="alertLabel" layoutX="37.0" layoutY="124.0" prefHeight="15.0" prefWidth="220.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

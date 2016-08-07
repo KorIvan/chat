@@ -1,0 +1,55 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+    -fx-background-color: #383838;
+}
+.label{
+    -fx-text-fill: #AB4642;
+        -fx-font-size: 15pt;
+}
+.text-area .content{
+    /*-fx-background-color: #1d1d1d;*/
+       -fx-font-fill: #AB4642;
+        -fx-font-size: 20pt;
+
+
+}
+.button{
+    -fx-background-color: #AB4642;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+.button-blue{
+    -fx-background-color: #7cafc2;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 4;
+}
+#bold-label{
+    -fx-font-weight: bold;
+}
+
+}
+.list-view {
+    -fx-font-size: 15pt;
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-insets: 0 ;
+    -fx-background-color: #1d1d1d;
+    -fx-padding: 2px;
+
+}
+/*
+.list-view:focused .list-cell:filled:selected, .list-view:focused .list-cell:filled:selected:hover {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+    -fx-background: black;
+   }*/
+
+/* When the list-cell is selected and focused */
+.list-view:focused .list-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    /* -fx-text-fill: -fx-selection-bar-text;  */
+    -fx-text-fill: red;
+}
